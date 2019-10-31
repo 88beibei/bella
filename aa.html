@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+.thin {
+    position: relative;
+    /* &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid red;
+        width: 200%;
+        height: 200%;
+        content: "";
+        transform: scale(.5);
+        transform-origin: left top;
+    } */
+}
+.thin::after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid red;
+  width: 200%;
+  height: 200%;
+  content: "";
+  transform: scale(.5);
+  transform-origin: left top;
+}
+</style>
+<body>
+  <div class="thin">
+
+  </div>
+</body>
+</html>
